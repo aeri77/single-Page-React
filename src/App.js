@@ -16,7 +16,9 @@ const asyncOrders = asyncComponent(() => {
 const asyncAuth = asyncComponent(() => {
   return import('./containers/Auth/Auth')
 })
-
+const asyncDemoPage = asyncComponent(() => {
+  return import('./containers/Demo/Demo')
+} )
 
 class App extends Component {
 
@@ -30,6 +32,8 @@ class App extends Component {
       <Switch>
           <Route path="/auth" component={asyncAuth} />
           <Route path="/" exact component={BurgerBuilder} />
+          <Route path="/demo" component
+            ={asyncDemoPage} />
           <Redirect to="/" />
       </Switch>
     )
@@ -42,6 +46,8 @@ class App extends Component {
           <Route path="/logout" component={Logout} />
           <Route path="/auth" component={asyncCheckout} />
           <Route path="/" exact component={BurgerBuilder} />
+          <Route path="/demo" component
+            ={asyncDemoPage} />
           <Redirect to="/" />
         </Switch>
       )
