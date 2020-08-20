@@ -11,6 +11,7 @@ import Spinner from '../../components/UI/Spinner/Spinner'
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler'
 import axios from '../../axios-orders'
 import * as actions from '../../store/actions/index'
+import classes from './BurgerBuilder.css'
 
 export class BurgerBuilder extends Component{
     // constructor(props){
@@ -91,11 +92,13 @@ export class BurgerBuilder extends Component{
         
         return (
             <Aux>
+                <div className={classes.Body}>
                 <Modal show={this.state.purchasing}
                 modalClosed={this.purchaseCancelHandler}>
                     {orderSummary}
                 </Modal>
                 {burger}
+                </div>
             </Aux>
         )
     }

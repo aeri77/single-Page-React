@@ -1,18 +1,23 @@
+
 .Body {
-  position: relative;
+  position: static;
   width: 100%;
-  height: 100%;
-  clear: left;
+  height: auto;
+  padding-top: 74px;
+  background: rgb(24,14,9);
+  background: linear-gradient(161deg, rgba(24,14,9,0.9839286056219363) 32%, rgba(43,24,15,1) 58%, rgba(3,2,1,0.9615196420365021) 91%);
 }
 .Background {
   position: relative;
   display: block;
-  width: 100%;
-  margin-top: -20px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
   height: 600px;
-  z-index: -1;
   background-image: url("./sample-landscape.jpg");
   background-position-y: 9%;
+  background-size: cover;
+  border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .Demo {
@@ -48,7 +53,6 @@
   display: flex;
   width: 70%;
   max-height: 476px;
-  background-color: white;
   margin: 200px 90px 80px 90px;
 }
 .firstImageContainer{
@@ -108,7 +112,6 @@
   float: left;
   width: 70%;
   max-height: 476px;
-  background-color: white;
   margin: 200px 90px 80px 90px;
 }
 .secondImageContainer{

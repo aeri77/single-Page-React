@@ -10,5 +10,5 @@
     padding: 0 20px;
     box-sizing: border-box;
     z-index: -2;
-    background: #3971FF;
+    background: linear-gradient(180deg, rgba(11,7,3,0.3) 0%, rgba(43,21,11,0) 30%);
 }
