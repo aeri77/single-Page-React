@@ -1,0 +1,59 @@
+
+.Background {
+    position: relative;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%, 0);
+    height: auto;
+    width: auto;
+    z-index: 10;
+    object-fit: cover;
+    
+  }
+  .bg{
+    position: absolute;
+    height: 535px;
+    width: 900px;
+    z-index: 50;
+    background: rgb(42,33,30);
+    background: radial-gradient(circle, rgba(42,33,30,0.12) 0%, rgba(42,33,30,0.12) 100%);
+    border-radius: 6px;
+  }
+  .Selector {
+    position: absolute;
+    font-size: xx-large;
+    z-index: 30;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  .textAbout {
+    position: absolute;
+    height: 50px;
+    width: 600px;
+    bottom: 10px;
+    left: 0px;
+    z-index: 20;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.8018557764902836) 25%, rgba(255,255,255,0) 100%);
+    font-size: 14px;
+    font-family: 'Cantata One', serif;
+    padding: 50px;
+  }
+
+  .text {
+    position: relative;
+    margin: 75px -70px;
+    padding: 6px;
+    font-size: 21px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 100%);
+    border-radius: 10px;
+  }
+  .text p {
+    color: white;
+    margin-left: 30px;
+  }
+  .text h3{
+    color: white;
+    margin: 10px 0 -20px 10px;
+  }

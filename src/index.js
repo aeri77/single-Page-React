@@ -24,18 +24,12 @@ const store = createStore(rootReducer, composeEnhancers(
   applyMiddleware(thunk)
 ))
 
-const app = (
-    <Provider store={store}>
-      <BrowserRouter>
-        <App />  
-      </BrowserRouter>
-    </Provider>
-)
-
 ReactDOM.render(
-  <React.StrictMode>
-    {app}
-  </React.StrictMode>,
+  <Provider store={store}>
+  <BrowserRouter>
+    <App />  
+  </BrowserRouter>
+</Provider>,
   document.getElementById('root')
 );
 

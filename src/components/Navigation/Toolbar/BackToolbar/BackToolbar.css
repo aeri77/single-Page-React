@@ -10,5 +10,6 @@
     padding: 0 20px;
     box-sizing: border-box;
     z-index: -2;
-    background: linear-gradient(180deg, rgba(11,7,3,0.3) 0%, rgba(43,21,11,0) 30%);
+    background: rgb(42,33,30);
+    background: linear-gradient(180deg, rgba(42,33,30,0.9699230033810399) 0%, rgba(42,33,30,0.4741246840533089) 51%, rgba(42,33,30,0) 100%);
 }
