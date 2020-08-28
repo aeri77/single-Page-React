@@ -4,7 +4,6 @@
   
   margin-top: 20px;
   grid-template-columns: repeat(9, 35px) ;
-  background: rgb(0,0,0);
   background: radial-gradient(circle, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%);
   border-radius: 20px;
   -webkit-user-select: none;
@@ -31,6 +30,17 @@
   border: 1.4px solid hsl(0, 0%, 70%);
   border-radius: 100%;
 
+}
+
+@media(max-width:499px){
+  .dot{
+    width: 8px;
+    height: 8px;
+  }
+  .wrapper{
+    margin-top: 10px;
+    background: 0;
+  }
 }
 
 .dot::before,

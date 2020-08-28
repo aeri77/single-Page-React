@@ -10,3 +10,16 @@
     transform: translate(-50%, 0);
     transition: all 1s ease-in-out;
 }
+
+@media (max-width:499px){
+  .Image {
+    height: 220px;
+    width: 320px;
+    }
+}
+@media (max-width:399px){
+    .Image {
+      height: 170px;
+      width: 270px;
+    }
+}

@@ -31,7 +31,37 @@
     animation: slideEndText 1s ease-in-out forwards alternate;
   }
 
+  @media (max-width:499px){
+    .text{
+      font-size: 11px;
+      width: 399px;
+    }
+    .contentHide,.titleHide {
+      width: 399px;
+    }
+    .contentShow {
+      width: 399px;
+    }
+    .titleShow {
+      margin: 0px 0px 0px 10px;
+    }
+  }
 
+  @media (max-width:399px){
+    .text{
+      font-size: 8px;
+      width: 299px;
+    }
+    .contentHide,.titleHide {
+      width: 299px;
+    }
+    .contentShow {
+      width: 299px;
+    }
+    .titleShow {
+      margin: 0px 0px 0px 10px;
+    }
+  }
   @keyframes slideNextText {
     0% {
         display: inline-block;

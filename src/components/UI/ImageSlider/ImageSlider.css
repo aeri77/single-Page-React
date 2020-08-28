@@ -77,6 +77,28 @@ opacity: 0;
 z-index: 20;
 animation: changeImage 1s ease-in-out backwards ;
 }
+
+
+@media (max-width:499px){
+  .thes,.img,.bg {
+    height: 220px;
+    width: 320px;
+    min-width: 320px;
+    min-height: 220px;
+    max-width: 320px;
+    max-height: 220px;
+  }
+}
+@media (max-width:399px){
+  .thes,.img,.bg {
+    height: 170px;
+    width: 270px;
+    min-width: 270px;
+    min-height: 170px;
+    max-width: 270px;
+    max-height: 170px;
+  }
+}
 @keyframes afterImage {
   0% {
       opacity: 0.25;
