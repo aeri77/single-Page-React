@@ -50,13 +50,13 @@
   @media (max-width:599px){
     .text{
       font-size: 14px;
-      width: 499px;
+      width: 469px;
     }
     .contentHide,.titleHide {
-      width: 499px;
+      width: 469px;
     }
     .contentShow {
-      width: 499px;
+      width: 469px;
     }
     .titleShow {
       margin: 0px 0px 0px 10px;
@@ -65,15 +65,15 @@
 
   @media (max-width:499px){
     .text{
-      font-size: 8px;
+      font-size: 11px;
       margin: 65px 0px 0px -65px;
-      width: 399px;
+      width: 369px;
     }
     .contentHide,.titleHide {
-      width: 399px;
+      width: 369px;
     }
     .contentShow {
-      width: 399px;
+      width: 369px;
     }
     .titleShow {
       margin: 0px 0px 0px 10px;
@@ -82,15 +82,15 @@
 
   @media (max-width:399px){
     .text{
-      font-size: 8px;
+      font-size: 11px;
       margin: 65px 0px 0px -40px;
-      width: 299px;
+      width: 269px;
     }
     .contentHide,.titleHide {
-      width: 299px;
+      width: 269px;
     }
     .contentShow {
-      width: 299px;
+      width: 269px;
     }
     .titleShow {
       margin: 0px 0px 0px 10px;
@@ -100,13 +100,13 @@
     .text{
       font-size: 6px;
       margin: 60px 0px 0px -20px;
-      width: 199px;
+      width: 169px;
     }
     .contentHide,.titleHide {
-      width: 199px;
+      width: 169px;
     }
     .contentShow {
-      width: 199px;
+      width: 169px;
     }
     .titleShow {
       margin: 0px 0px 0px 10px;
