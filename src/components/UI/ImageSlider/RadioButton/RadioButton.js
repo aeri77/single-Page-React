@@ -17,45 +17,33 @@ class radioButton extends Component {
       }
 
     render (){
+
+        let imgList = []
+            for(let key in this.props.imageList){
+                imgList.push({
+                    id: key,
+                    config: this.props.imageList[key]
+                })
+            }
+        let radioButton = (
+            <div className={classes.wrapper} style={{'gridTemplateColumns': `repeat(${imgList.length}, 35px)`}}>
+                {imgList.map(listImage => (
+                    <label key={listImage.config.value} >&nbsp;
+                        <input type="radio" value={listImage.config.value} name="image" className={classes.design} checked={listImage.config.isActive} onChange={this.props.changed}/>
+                        <span className={classes.dot}/>
+                    </label>
+                ))}
+            </div>
+        )
         return (
-            <div className={classes.wrapper}>
-                <label>&nbsp;
-                    <input type="radio" value="FirstImage" name="image" onChange={this.onChangeValue} onClick={this.props.prev}  className={classes.design} checked={this.state.name === "FirstImage"} />
-                    <span className={classes.dot}/>
-                </label>
-                <label>&nbsp;
-                    <input type="radio" value="SecondImage" name="image" onChange={this.onChangeValue} onClick={this.props.clicked}  className={classes.design} checked={this.state.name === "SecondImage"} />
-                    <span className={classes.dot}/>
-                </label>
-                <label>&nbsp;
-                    <input type="radio" value="ThirdImage" name="image" onChange={this.onChangeValue} onClick={this.props.next}  className={classes.design} checked={this.state.name === "ThirdImage"} />
-                    <span className={classes.dot}/>
-                </label>
-                <label>&nbsp;
-                    <input type="radio" value="FirstImage" name="image" onChange={this.onChangeValue} onClick={this.props.prev}  className={classes.design} checked={this.state.name === "FirstImage"} />
-                    <span className={classes.dot}/>
-                </label>
-                <label>&nbsp;
-                    <input type="radio" value="SecondImage" name="image" onChange={this.onChangeValue} onClick={this.props.clicked}  className={classes.design} checked={this.state.name === "SecondImage"} />
-                    <span className={classes.dot}/>
-                </label>
-                <label>&nbsp;
-                    <input type="radio" value="ThirdImage" name="image" onChange={this.onChangeValue} onClick={this.props.next}  className={classes.design} checked={this.state.name === "ThirdImage"} />
-                    <span className={classes.dot}/>
-                </label>
-                <label>&nbsp;
-                    <input type="radio" value="FirstImage" name="image" onChange={this.onChangeValue} onClick={this.props.prev}  className={classes.design} checked={this.state.name === "FirstImage"} />
-                    <span className={classes.dot}/>
-                </label>
-                <label>&nbsp;
-                    <input type="radio" value="SecondImage" name="image" onChange={this.onChangeValue} onClick={this.props.clicked}  className={classes.design} checked={this.state.name === "SecondImage"} />
-                    <span className={classes.dot}/>
-                </label>
-                <label>&nbsp;
-                    <input type="radio" value="ThirdImage" name="image" onChange={this.onChangeValue} onClick={this.props.next}  className={classes.design} checked={this.state.name === "ThirdImage"} />
-                    <span className={classes.dot}/>
-                </label>
-        </div>
+                
+                <div>
+                    {/* <label>&nbsp;
+                        <input type="radio" value="FirstImage" name="image" onChange={this.onChangeValue} onClick={this.props.prev}  className={classes.design} checked={this.state.name === "FirstImage"} />
+                        <span className={classes.dot}/>
+                    </label> */}
+                    {radioButton}
+                </div>
         )
     }
 }

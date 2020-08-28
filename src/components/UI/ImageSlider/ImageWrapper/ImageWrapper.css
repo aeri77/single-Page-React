@@ -1,7 +1,7 @@
 .Image {
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(3,0);
+    display: grid;    
+    grid-auto-flow: dense;
     left: 50%;
     height: 535px;
     width: 900px;
@@ -9,51 +9,4 @@
     
     transform: translate(-50%, 0);
     transition: all 1s ease-in-out;
-}
-.img {
-    min-width: 900px;
-    min-height: 535px;
-    max-width: 900px;
-    max-height: 535px;
-    object-fit: fit;
-    border-radius: 8px;
-    animation: afterImage 2s ease-in-out forwards alternate;
-}
-.thes{
-  height: 535px;
-  width: 900px;
-  object-fit: fit;
-  border-radius: 8px;
-  animation: changeImage 2s ease-in-out forwards alternate;
-}
-@keyframes afterImage {
-    0% {
-        opacity: 0;
-        z-index: 0;
-      }
-      25% {
-        opacity: 0;
-      }
-      75% {
-        opacity: 1;
-        
-      }
-      100% {
-        opacity: 1;
-      }
-}
-
-@keyframes changeImage {
-    0% {
-        opacity: 1;
-      }
-      25% {
-        opacity: 1;
-      }
-      75% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 0;
-      }
 }

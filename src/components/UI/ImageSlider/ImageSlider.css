@@ -57,3 +57,53 @@
     color: white;
     margin: 10px 0 -20px 10px;
   }
+
+  
+.img {
+  min-width: 900px;
+  min-height: 535px;
+  max-width: 900px;
+  max-height: 535px;
+  object-fit: fit;
+  border-radius: 8px;
+  z-index: 30;
+  animation: afterImage 1s ease-in-out forwards ;
+}
+.thes{
+height: 535px;
+width: 900px;
+border-radius: 8px;
+opacity: 0;
+z-index: 20;
+animation: changeImage 1s ease-in-out backwards ;
+}
+@keyframes afterImage {
+  0% {
+      opacity: 0.25;
+    }
+    25% {
+      opacity: 0.25;
+    }
+    75% {
+      opacity: 1;
+      
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes changeImage {
+  0% {
+      opacity: 0.6;
+    }
+    25% {
+      opacity: 0.6;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+}

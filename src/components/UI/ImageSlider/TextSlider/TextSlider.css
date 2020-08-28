@@ -1,0 +1,70 @@
+.text {
+    position: relative;
+    margin: 75px -70px;
+    padding: 6px;
+    display: grid;
+    width: 1000px;
+    grid-template-columns: repeat(3,0);
+    font-size: 21px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 100%);
+    border-radius: 10px;
+  }
+  .contentShow {
+    color: white;
+    margin-left: 30px;
+    width: 1000px;
+    animation: slideNextText 1s ease-in-out forwards alternate;
+  }
+  
+  .titleShow {
+    color: white;
+    width: 1000px;
+    margin: 10px 0 -20px 10px;
+    animation: slideNextText 1s ease-in-out forwards alternate;
+  }
+
+  .contentHide,.titleHide {
+    display: none;
+    width: 1000px;
+    margin: 10px 0 -20px 10px;
+    animation: slideEndText 1s ease-in-out forwards alternate;
+  }
+
+
+  @keyframes slideNextText {
+    0% {
+        display: inline-block;
+        opacity: 0;
+        z-index: 0;
+        transform: translate(-20%,0);
+      }
+      25% {
+        opacity: 0;
+        transform: translate(-20%,0);
+      }
+      75% {
+        opacity: 1;
+        transform: translate(0%,0);
+        
+      }
+      100% {
+        opacity: 1;
+        transform: translate(0%,0);
+      }
+  }
+  
+  @keyframes slideEndText {
+    0% {
+        opacity: 1;
+      }
+      25% {
+        opacity: 1;
+      }
+      75% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+  }
