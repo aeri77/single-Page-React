@@ -14,7 +14,7 @@
     position: absolute;
     height: 535px;
     width: 900px;
-    z-index: 50;
+    z-index: 300;
     background: rgb(42,33,30);
     background: radial-gradient(circle, rgba(42,33,30,0.12) 0%, rgba(42,33,30,0.12) 100%);
     border-radius: 6px;
@@ -26,38 +26,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
   }
-  .textAbout {
-    position: absolute;
-    height: 50px;
-    width: 600px;
-    bottom: 10px;
-    left: 0px;
-    z-index: 20;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,0.8018557764902836) 25%, rgba(255,255,255,0) 100%);
-    font-size: 14px;
-    font-family: 'Cantata One', serif;
-    padding: 50px;
-  }
-
-  .text {
-    position: relative;
-    margin: 75px -70px;
-    padding: 6px;
-    font-size: 21px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: radial-gradient(circle, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 100%);
-    border-radius: 10px;
-  }
-  .text p {
-    color: white;
-    margin-left: 30px;
-  }
-  .text h3{
-    color: white;
-    margin: 10px 0 -20px 10px;
-  }
-
   
 .img {
   min-width: 900px;
@@ -70,15 +38,54 @@
   animation: afterImage 1s ease-in-out forwards ;
 }
 .thes{
-height: 535px;
-width: 900px;
-border-radius: 8px;
-opacity: 0;
-z-index: 20;
-animation: changeImage 1s ease-in-out backwards ;
+  height: 535px;
+  width: 900px;
+  border-radius: 8px;
+  opacity: 0;
+  z-index: 20;
+  animation: changeImage 1s ease-in-out backwards ;
+}
+@media (max-width:899px){
+  .thes,.img,.bg {
+    height: 420px;
+    width: 520px;
+    min-width: 520px;
+    min-height: 420px;
+    max-width: 520px;
+    max-height: 420px;
+  }
 }
 
-
+@media (max-width:799px){
+  .thes,.img,.bg {
+    height: 370px;
+    width: 470px;
+    min-width: 470px;
+    min-height: 370px;
+    max-width: 470px;
+    max-height: 370px;
+  }
+}
+@media (max-width:699px){
+  .thes,.img,.bg {
+    height: 320px;
+    width: 420px;
+    min-width: 420px;
+    min-height: 320px;
+    max-width: 420px;
+    max-height: 320px;
+  }
+}
+@media (max-width:599px){
+  .thes,.img,.bg {
+    height: 270px;
+    width: 370px;
+    min-width: 370px;
+    min-height: 270px;
+    max-width: 370px;
+    max-height: 270px;
+  }
+}
 @media (max-width:499px){
   .thes,.img,.bg {
     height: 220px;

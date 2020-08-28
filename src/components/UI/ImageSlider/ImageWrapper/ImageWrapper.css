@@ -10,7 +10,30 @@
     transform: translate(-50%, 0);
     transition: all 1s ease-in-out;
 }
-
+@media (max-width:799px){
+    .Image {
+      height: 420px;
+      width: 520px;
+      }
+  }
+@media (max-width:799px){
+    .Image {
+      height: 370px;
+      width: 470px;
+      }
+  }
+@media (max-width:699px){
+    .Image {
+      height: 320px;
+      width: 420px;
+      }
+  }
+@media (max-width:599px){
+    .Image {
+      height: 270px;
+      width: 370px;
+      }
+  }
 @media (max-width:499px){
   .Image {
     height: 220px;
