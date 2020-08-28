@@ -46,3 +46,9 @@
       width: 270px;
     }
 }
+@media (max-width:299px){
+    .Image {
+      height: 120px;
+      width: 220px;
+    }
+}

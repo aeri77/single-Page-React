@@ -106,6 +106,16 @@
     max-height: 170px;
   }
 }
+@media (max-width:299px){
+  .thes,.img,.bg {
+    height: 120px;
+    width: 220px;
+    min-width: 220px;
+    min-height: 120px;
+    max-width: 220px;
+    max-height: 120px;
+  }
+}
 @keyframes afterImage {
   0% {
       opacity: 0.25;
