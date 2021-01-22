@@ -338,6 +338,9 @@ module.exports = function(webpackEnv) {
                 resolvePluginsRelativeTo: __dirname,
                 
               },
+              test: /\.js$/,
+              enforce: "pre",
+              use: ["source-map-loader"],
               loader: require.resolve('eslint-loader'),
             },
           ],

@@ -1,0 +1,99 @@
+.Item {
+    display: grid;
+    gap: 30px;
+    padding: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    height: 350px;
+}
+.Wrapper{
+    position: relative;
+    display: inline-flex;
+}
+.Card {
+    display: grid;
+    position: absolute;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: #E0E1DD;
+    width: 240px;
+    height:350px;
+    margin:auto auto;
+    border-radius: 50px;
+	background: #4b4b4b;
+	box-sizing: border-box;
+}
+.Wrapper:hover > .Hover2{
+   opacity: 1;
+   animation: slide 0.7s ease-in-out forwards alternate;
+}
+.Hover2{
+    position: absolute;
+    color: #E0E1DD;
+    width: 240px;
+    z-index: 70;
+    height: 350px;
+    opacity: 0;
+    margin:auto auto;
+    border-radius: 50px;
+    transition: all 0.5s ease-in;
+    animation: slideoff 0.7s ease-in-out backwards alternate;
+	background: slateblue;
+    box-sizing: border-box;
+    top: 0px;
+}
+
+@keyframes slide{
+    0%{
+        opacity: 0;
+    }
+    25%{
+
+        opacity: 0;
+    }
+    75%{
+
+        opacity: 1;
+    }
+    100%{
+
+        opacity: 1;
+    }
+}
+@keyframes slideoff{
+    0%{
+        opacity: 1;
+    }
+    25%{
+
+        opacity: 1;
+    }
+    75%{
+
+        opacity: 0;
+    }
+    100%{
+
+        opacity: 0;
+    }
+}
+.Card img{
+    object-fit: cover;
+    height: 170px;
+    width: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.Card img:hover{
+    object-fit: cover;
+    transform: scale(1.3);
+}
+
+.Container {
+    padding: 2px 16px;
+}
+

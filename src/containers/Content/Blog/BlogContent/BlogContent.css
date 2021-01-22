@@ -1,0 +1,26 @@
+.contentImage{
+    margin: auto auto;
+    width: 100%;
+    height: 125px;
+    max-height: 125px;
+    z-index: 0;
+}
+
+.contentImage img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 150px;
+}
+.content{
+    width: 300px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.contentInfo{
+    background: white;
+    
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 20;
+}

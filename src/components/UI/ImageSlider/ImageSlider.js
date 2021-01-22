@@ -100,16 +100,28 @@ import axios from 'axios'
 
 
         return (
-            <div className={classes.Background}>
-              <span className={classes.bg} />
-                  <ImageWrapper imageList={this.state.imageList}/>        
-                <div className={classes.Selector}>
-                  <SliderButton  imageList={this.state.imageList} changed={(event) => this.onChangeClicked(event)}/>
-                  <TextSlider imageList={this.state.imageList} />
-                </div>
+
+          <div className={classes.Headline}>
+            <div className={classes.ImageArea}>
+              <ImageWrapper imageList={this.state.imageList}/>
+            </div>
+            <div className={classes.ButtonArea}>
+              <SliderButton  imageList={this.state.imageList} changed={(event) => this.onChangeClicked(event)}/>
+            </div>
+            <div className={classes.TextArea}>
+              <TextSlider imageList={this.state.imageList} />
+            </div>
+          </div>
+            // <div className={classes.Background}>
+            //   <span className={classes.bg} />
+            //       <ImageWrapper imageList={this.state.imageList}/>        
+            //     <div className={classes.Selector}>
+            //       <SliderButton  imageList={this.state.imageList} changed={(event) => this.onChangeClicked(event)}/>
+            //       <TextSlider imageList={this.state.imageList} />
+            //     </div>
                  
                   
-            </div>
+            // </div>
       )
     }
       

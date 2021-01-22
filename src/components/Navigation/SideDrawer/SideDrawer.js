@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../Logo/Logo'
+// import Logo from '../../Logo/Logo'
 import NavigationItems from '../NavigationItems/NavigationItems'
 import classes from './SideDrawer.css'
 import Backdrop from '../../UI/Backdrop/Backdrop'
@@ -17,9 +17,9 @@ const sideDrawer = props => {
             show={props.open} 
             clicked={props.closed} />
         <div className={attachedClasses.join(' ')} onClick={props.closed}>
-            <div className={classes.Logo}>
+            {/* <div className={classes.Logo}>
                 <Logo />
-            </div>
+            </div> */}
             <nav>
                 <NavigationItems isAuthenticated={props.isAuth} />
             </nav>

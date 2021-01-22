@@ -1,4 +1,42 @@
 
+.Headline{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.7fr 0.2fr 0.9fr;
+  gap: 2px 1px;
+  grid-template-areas:
+    "ImageArea ImageArea ImageArea"
+    ". ButtonArea ."
+    "TextArea TextArea TextArea";
+}
+.TextArea { 
+  grid-area: TextArea;
+  align-items: center;
+  align-content: center;
+  justify-content: center; 
+  margin: 0 auto;
+  
+
+}
+
+.ImageArea { 
+  grid-area: ImageArea; 
+  align-items: center;
+  align-content: center;
+  justify-content: center; 
+  margin: 0 auto;
+
+}
+
+.ButtonArea { 
+  grid-area: ButtonArea; 
+  align-items: center;
+  align-content: center;
+  justify-content: center; 
+  margin: 0 auto;
+}
+
+
 .Background {
     position: relative;
     left: 50%;
@@ -12,12 +50,11 @@
   }
   .bg{
     position: absolute;
-    height: 535px;
-    width: 900px;
+    height: 372px;
+    width: 602px;
     z-index: 300;
     background: rgb(42,33,30);
     background: radial-gradient(circle, rgba(42,33,30,0.12) 0%, rgba(42,33,30,0.12) 100%);
-    border-radius: 6px;
   }
   .Selector {
     position: absolute;
@@ -28,18 +65,17 @@
   }
   
 .img {
-  min-width: 900px;
-  min-height: 535px;
-  max-width: 900px;
-  max-height: 535px;
+  min-width: 602px;
+  min-height: 372px;
+  max-width: 602px;
+  max-height: 372px;
   object-fit: fit;
-  border-radius: 8px;
   z-index: 30;
   animation: afterImage 1s ease-in-out forwards ;
 }
 .thes{
-  height: 535px;
-  width: 900px;
+  height: 372px;
+  width: 602px;
   border-radius: 8px;
   opacity: 0;
   z-index: 20;

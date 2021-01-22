@@ -1,0 +1,153 @@
+
+.Main {
+  padding-left: 40px;
+  
+  padding-top: 70px;
+  padding-right: 40px;
+  background:white;
+}
+
+.GridContainer {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1.4fr 1fr 1fr ;
+  gap: 0px 0px;
+  grid-template-areas:
+    "NavigationProfile . . ."
+    "NavigationProfile Content Content Content"
+    "NavigationProfile Content Content Content"
+    "NavigationProfile Content Content Content"
+  }
+  .Content { 
+    padding-left: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1.6fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "headerContent"
+      "bodyContent";
+    grid-area: Content;
+    
+  }
+  .headerContent { grid-area: headerContent; }
+  .headerContent h1{
+    text-align: center;
+    margin: -1px;
+  }
+  .bodyContent { grid-area: bodyContent; }
+
+  .Footer { 
+    grid-area: Footer; 
+    background: rgb(15,32,39);
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 12px;
+    height: 100%;
+  }
+  
+  .NavigationProfile { 
+    background: rgb(15,32,39);
+    background: linear-gradient(22deg, rgba(15,32,39,1) 18%, rgba(32,58,67,1) 50%, rgba(44,83,100,1) 88%);
+    display: grid;
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.5);
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.75fr 1fr 0.5fr;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Image"
+      "Navigation"
+      "Contact";
+    grid-area: NavigationProfile; 
+  }
+  
+  .Image { 
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    grid-area: Image; 
+  }
+
+  .Image h3{
+    color: white;    
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 38px;
+    font-family: 'Dosis', sans-serif;
+  }
+
+  .hl0{
+    border-top: 1px solid white;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -28px;
+    margin-top: -28px;
+    width: 200px;
+  }
+  .hl1{
+    border-top: 1px solid #4b4b4b;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+  }
+  .Image p{
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 32px;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  .Navigation { 
+    padding: 30px;
+    grid-area: Navigation;
+    color: whitesmoke;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+  }
+
+  .Contact { 
+    grid-area: Contact;
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    flex-direction: row;
+  }
+
+  /* .image {
+    width: 100%;
+    height: 250px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    
+  } */
+
+  .icons{
+    width: 20px;
+    height: 20px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: auto auto;
+  }
+
+  .navigation {
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .taskbar{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    font-size: 32px;
+  }

@@ -1,33 +1,29 @@
 .text {
-    position: relative;
-    margin: 75px 0px 0px -70px;
     padding: 6px;
     display: grid;
     width: 1000px;
     grid-template-columns: repeat(3,0);
     font-size: 21px;
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: radial-gradient(circle, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 100%);
     border-radius: 10px;
   }
   .contentShow {
-    color: white;
-    margin-left: 30px;
+    color: #E0E1DD;
     width: 1000px;
     animation: slideNextText 1s ease-in-out forwards alternate;
   }
   
   .titleShow {
-    color: white;
+    color: #E0E1DD;
     width: 1000px;
-    margin: 10px 0 -20px 10px;
     animation: slideNextText 1s ease-in-out forwards alternate;
   }
 
   .contentHide,.titleHide {
     display: none;
     width: 1000px;
-    margin: 10px 0 -20px 10px;
     animation: slideEndText 1s ease-in-out forwards alternate;
   }
 
@@ -83,14 +79,14 @@
   @media (max-width:399px){
     .text{
       font-size: 11px;
-      margin: 65px 0px 0px -40px;
-      width: 269px;
+      margin: 65px 0px 0px -60px;
+      width: 260px;
     }
     .contentHide,.titleHide {
-      width: 269px;
+      width: 260px;
     }
     .contentShow {
-      width: 269px;
+      width: 260px;
     }
     .titleShow {
       margin: 0px 0px 0px 10px;

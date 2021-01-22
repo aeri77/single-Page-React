@@ -1,10 +1,8 @@
 .wrapper {
   display:grid;
-  position: absolute;
   
   margin-top: 20px;
   grid-template-columns: repeat(9, 35px) ;
-  background: radial-gradient(circle, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%);
   border-radius: 20px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -21,7 +19,6 @@
 .dot {
   cursor: pointer;
   
-  margin-top: -30px;
   position: absolute;
   display: block;
   margin-left: 10px;
